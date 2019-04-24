@@ -1,0 +1,1344 @@
+public class Solution {
+
+import javax.swing.*;
+import java.util.ArrayList;
+
+public static void main(String[] args) {                            // деление
+          div(6, 3);
+          div(10, 6);
+          div(2, 4);
+      }
+
+      public static void div(int a, int b) {
+          int c = a / b;
+          System.out.print(c + " ");
+      }
+  }
+  
+  
+  
+  public class Solution {                                                  // Вывод текста
+      public static void printString(String s) {
+          System.out.println(s);    
+      }
+
+      public static void main(String[] args) {
+          printString("Hello Amigo!");
+      }
+  }
+
+
+ 
+  public class Solution {                                                 // конвертер
+  public static void main(String[] args) {                                 
+      System.out.println(convertEurToUsd(2,5.5));
+      System.out.println(convertEurToUsd(2,5.7));
+  }
+
+  public static double convertEurToUsd(int eur, double course) {
+      double convertEurToUsd;
+      convertEurToUsd = eur * course;
+      return convertEurToUsd;
+      }
+      }
+
+
+public class Solution {                                                   // проценты
+public static double addTenPercent(int i) {                                 
+  double addTenPercent = i + (i*0.1);
+  return addTenPercent; //напишите тут ваш код
+  }
+
+  public static void main(String[] args) {
+
+      System.out.println(addTenPercent(9));
+}
+}
+
+  
+  public class Solution { 
+  public static void main(String[] args) {                                 // Головоломка со скобками
+      System.out.println(1 + 2 * (3 + 4 * (5 + 6 * 7) + 8 * 9) + 10);
+
+
+
+  }
+}
+
+public class Solution { 
+public static void main(String[] args) {                                  // Создание обьектов и присвоение им имен
+        Zerg zerg1 = new Zerg();
+        zerg1.name= "li";
+        Zerg zerg2 = new Zerg();
+        zerg2.name = "lo";
+        Zerg zerg3 = new Zerg();
+        zerg3.name = "lu";
+        Zerg zerg4 = new Zerg();
+        zerg4.name = "la";
+        Zerg zerg5 = new Zerg();
+        zerg5.name = "ln";
+
+        Protoss protoss1 = new Protoss();
+        protoss1.name = "an";
+        Protoss protoss2 = new Protoss();
+        protoss2.name = "on";
+        Protoss protoss3 = new Protoss();
+        protoss3.name = "in";
+
+        Terran terranoi1 = new Terran();
+        terranoi1.name = "oi";
+        Terran terranoi2 = new Terran();
+        terranoi2.name = "ai";
+        Terran terranoi3 = new Terran();
+        terranoi3.name = "ei";
+        Terran terranoi4 = new Terran();
+        terranoi4.name = "li";
+        
+    }
+
+  public static class Zerg {
+      public String name;
+  }
+
+  public static class Protoss {
+      public String name;
+  }
+
+  public static class Terran {
+      public String name;
+  }
+}
+   
+   
+   public class Solution { 
+   public static void main(String[] args) {                            // произведение 10 чисел
+
+        System.out.println(1*2*3*4*5*6*7*8*9*10);
+    }
+}
+
+
+public class Solution { 
+        public static void main(String[] args) {                       //сумма 5 чисел
+            System.out.println(1);
+            System.out.println(1+2);
+            System.out.println(1+2+3);
+            System.out.println(1+2+3+4);
+            System.out.println(1+2+3+4+5);//напишите тут ваш код
+        }
+    }
+    
+    public class Solution { 
+    public static void main(String[] args) {                          //куб.м.в литры
+        System.out.println(getVolume(25, 5, 2));
+    }
+
+    public static long getVolume(int a, int b, int c) {
+        return a*b*c*1000;
+    }
+}
+   
+   public class Solution { 
+   public static void main(String[] args) {                        // "printing: "
+        writeToConsole("Hello world!");
+    }
+
+    public static void writeToConsole(String s) {
+        System.out.println("printing: " + s);//напишите тут ваш код
+    }
+}
+   
+   
+   public class Solution { 
+   public static int convertToSeconds(int hour){                   //Конвертируем время
+        return hour*60*60;
+    }
+    public static void main(String[] args) {
+        for (int i=1;i<3;i++){
+            System.out.println(convertToSeconds(i));
+        }
+    }
+}
+
+    public class Solution { 
+    public static void main(String[] args) {                           //Вывести на экран все возможные комбинации слов "Мама", "Мыла", "Раму".
+        System.out.println("МылаРамуМама");
+        System.out.println("РамуМамаМыла");
+        System.out.println("МамаРамуМыла");
+        System.out.println("РамуМылаМама");
+        System.out.println("МылаМамаРаму");
+        System.out.println("МамаМылаРаму");//напишите тут ваш код
+    }
+}
+   
+   public class Solution { 
+   public static void main(String[] args) {                            //Создать 7 объектов, чтобы на экран вывелись 7 цветов радуги.
+        Red red = new Red();
+        Orange orange = new Orange();
+        Yellow yellow = new Yellow();
+        Green green= new Green();
+        Blue blue = new Blue();
+        Indigo indigo = new Indigo();
+        Violet violet = new Violet();
+        
+    }
+
+    public static class Red {
+        public Red() {
+            System.out.println("Red");
+        }
+    }
+
+    public static class Orange {
+        public Orange() {
+            System.out.println("Orange");
+        }
+    }
+
+    public static class Yellow {
+        public Yellow() {
+            System.out.println("Yellow");
+        }
+    }
+
+    public static class Green {
+        public Green() {
+            System.out.println("Green");
+        }
+    }
+
+    public static class Blue {
+        public Blue() {
+            System.out.println("Blue");
+        }
+    }
+
+    public static class Indigo {
+        public Indigo() {
+            System.out.println("Indigo");
+        }
+    }
+
+    public static class Violet {
+        public Violet() {
+            System.out.println("Violet");
+        }
+    }
+}
+   
+   public class Solution { 
+   public static void main(String[] args) {                                                      //Экранирование символов
+        System.out.println("It's Windows path: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"");
+       System.out.println("It's Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.7.0\\\\bin\\\"");
+    }
+}
+                                                                                       
+                                                                                       
+         public class Solution {                                                                               //Ввести с клавиатуры число и имя,
+                                                                                                      вывести на экран строку
+        public static void main (String[]args) throws Exception {
+
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                String age = br.readLine();
+                String name = br.readLine();
+                System.out.println(name + " захватит мир через "+age+" лет. Му-ха-ха!");
+            }
+        }
+        
+        public class Solution { 
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name =br.readLine();
+        String age1= br.readLine();
+        String age2= br.readLine();
+        System.out.println(name + " получает "+age1+" через "+age2+" лет.");
+    }
+}
+
+    
+    public class Solution { 
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name = br.readLine();
+        System.out.println(name + " зарабатывает $5,000. Ха-ха-ха!");
+    }
+}
+    
+    public class Solution { 
+    public static void main(String[] args) {                                            //считает сколько секунд прошло с 15:00, если на часах 15:30
+    int secondsAfter15 = 30*60;
+        System.out.println(secondsAfter15);
+ }
+}
+    
+    public class Solution { 
+    public static void main(String[] args) {
+        System.out.println(getMetreFromCentimetre(243));
+    }
+
+    public static int getMetreFromCentimetre(int centimetre) {        //правильно возвращать количество полных метров в centimetre.
+       
+        return centimetre/100;                              
+    }
+}
+   
+   public class Solution { 
+   public static void main(String[] args) throws Exception {                    // Вывод с клавиатуры
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name1 = br.readLine();
+        String name2 = br.readLine();
+        String name3 = br.readLine();
+        System.out.println(name1 + " + " + name2 + " + " + name3 + " = Чистая любовь, да-да!");
+    }
+}
+    
+    public class Solution { 
+    public static void main(String[] args) {                              //Сумма цифр трехзначного числа
+        System.out.println(sumDigitsInNumber(546));
+    }
+
+    public static int sumDigitsInNumber(int number) {
+        int sum = 0;
+        int currentDigit;
+        currentDigit = number % 10;//546/10=54.6=6остаток
+        sum = sum + currentDigit;//0+6=6
+        number = number / 10;//546/10=54
+        currentDigit = number % 10;//54/10=4 остаток
+        sum = sum + currentDigit;//6+4=10
+        number = number / 10;//54/10=5
+        sum = sum + number;//10+5
+        return sum;
+    }
+}
+    
+    public class Solution { 
+    public static void main(String[] args) throws Exception {            //Ввести с клавиатуры число n.
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String n = br.readLine();
+        System.out.println("Я буду зарабатывать $" + n + " в час");
+    }
+}
+   
+   public class Solution { 
+   public static void main(String[] args) {                               //Вывести на экран десять раз надпись(цикл)
+        int x=0;
+               for (x=0;x<10;x++)
+            System.out.println("Я хочу большую зарплату, и для этого изучаю Java");
+
+    }
+}
+   
+   public class Solution { 
+   public static void main(String[] args) {              //Исправьте ошибку в программе чтобы переменная age объекта
+                                                          // person изменила свое значение.
+
+        Person person = new Person();
+        System.out.println("Age is: " + person.age);
+        person.adjustAge(person.age);
+        System.out.println("Adjusted age is: " + person.age);
+    }
+
+    public static class Person {
+        public int age = 20;
+
+        public void adjustAge(int age1) {
+            age = age1 + 20;
+
+                System.out.println("Age in adjustAge is: " + age);
+        }
+    }
+}
+  
+  public class Solution { 
+  public static void main(String[] args) {                                     //Подсчитать суммарную стоимость яблок.
+        Apple apple = new Apple();
+        apple.addPrice(50);
+        Apple apple2 = new Apple();
+        apple2.addPrice(100);
+        System.out.println("Стоимость яблок " + Apple.applesPrice);
+    }
+
+    public static class Apple {
+        public static int applesPrice = 0;
+
+        public static void addPrice(int applesPrice) {
+            Apple apple = new Apple();
+            apple.applesPrice = apple.applesPrice+applesPrice;
+        }
+    }
+}
+    
+    public class Cat {                                                   //Помогите коту обрести имя с помощью
+                                                                                   // метода setName.
+        private String name = "безымянный кот";
+
+        public void setName(String name) {
+            this.name = name; 
+        }
+
+        public static void main(String[] args) {
+            Cat cat = new Cat();
+            cat.setName("Жужик");
+            System.out.println(cat.name);
+        }
+    }
+    
+    
+    public class Cat {                                    //апиши код в методе addNewCat, чтобы при его
+                                                             // вызове количество котов увеличивалось на 1.
+        private static int catsCount = 0;
+
+        public static void addNewCat() {
+            catsCount ++;
+        }
+
+        public static void main(String[] args) {
+
+        }
+    }
+
+
+public class Cat {                                                //Напишите метод setCatsCount. Метод должен
+                                                                    // устанавливать количество котов (catsCount).
+    private static int catsCount = 0;
+
+    public static void setCatsCount(int catsCount) {
+        Cat.catsCount = catsCount;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+public class Cat {                                                         //Допишите код метода setName, чтобы с его
+                                                    помощью установить значение private String fullName равное значению
+                                                                             локальной переменной String fullName.
+    private String fullName;
+
+    public void setName(String firstName, String lastName) {
+        String fullName = firstName + " " + lastName;
+        this.fullName = fullName;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+    
+    
+    public class Solution {                                        //Написать код, чтобы правильно считалось количество
+                                                                  // созданных котов (count) и на экран выдавалось правильное их количество.
+        public static void main(String[] args) {
+            Cat cat1 = new Cat();
+            Cat.count++;
+
+            Cat cat2 = new Cat();
+            Cat.count++;
+
+
+            System.out.println("The cat count is " + Cat.count);
+        }
+
+        public static class Cat {
+            public static int count = 0;
+        }
+    }
+
+   
+   public class Solution {                                           //Написать метод compare(int a), чтобы он:
+        public static void main(String[] args) {
+            compare(3);
+            compare(6);
+            compare(5);
+        }
+
+        public static void compare(int a) {
+            if(a<5) {
+                System.out.println("Число меньше 5");
+
+            }
+            else if(a>5) {
+                System.out.println("Число больше 5");
+
+            }
+            else {
+                System.out.println("Число равно 5");
+
+            }
+     }
+     
+     
+     
+     public class Solution {                                   //Напишите метод closeToTen. Метод должен выводить на
+                                                                     экран ближайшее к 10 из двух чисел
+    public static void main(String[] args) {
+        closeToTen(8, 11);
+        closeToTen(7, 14);
+    }
+
+    public static void closeToTen(int a, int b) {
+        int n = 0;
+        int c = 0;
+        if (a > 10){
+            n = a - 10; }
+            else if (a < 10){
+                n = 10 - a; }
+                if (b > 10) {
+                    c = b - 10; }
+                    else if (b < 10){
+                        c = 10 - b; }
+                        if (abs(n) < abs(c)){
+                            System.out.println(a); }
+                            else if (abs(c) < abs(n)) {
+                                System.out.println(b); }
+                                if (abs(n) == abs(c))
+                                { System.out.println(a); }
+    }
+
+            public static int abs ( int a){
+                if (a < 0) {
+                    return -a;
+                } else {
+                    return a;
+                }
+            }
+
+
+        }
+
+
+public class Solution {                                         //целое число в интервал от 50 до 100 метод checkInterval.
+    public static void main(String[] args) {
+        checkInterval(60);
+        checkInterval(112);
+        checkInterval(10);
+    }
+
+    public static void checkInterval(int a) {
+        if (a>50 && a<100)
+            System.out.println("Число " + a + " содержится в интервале.");
+        else
+            System.out.println("Число " + a + " не содержится в интервале.");
+    }
+   
+   
+   
+   public class Solution {                          //Напишите метод checkSeason. По номеру месяца, метод должен
+                                                                      определить время года
+    public static void main(String[] args) {
+        checkSeason(12);
+        checkSeason(4);
+        checkSeason(7);
+        checkSeason(10);
+    }
+
+    public static void checkSeason(int month) {
+
+        if (month == 12)
+            System.out.println("зима");
+        if (month<=2)
+            System.out.println("зима");
+        if (month >=3 && month <=5)
+            System.out.println("весна");
+        if (month >=6 && month <=8)
+            System.out.println("лето");
+        if (month >=9&& month<=11)
+            System.out.println("осень");
+
+    }
+}
+
+
+public class Solution {                                                //Положительное и отрицательное число
+                                                                             Ввести с клавиатуры число.
+       public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer num1 = Integer.parseInt(reader.readLine());
+        if (num1>0)
+            num1 = num1*2;
+        else if (num1<0)
+            num1 = num1+1;
+        else
+            num1 = 0;
+
+        System.out.println(num1);
+    }
+}
+
+
+public class Solution {                                     //ывести название "понедельник", "вторник",
+                                                              "среда", "четверг", "пятница", "суббота", "воскресенье",
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer num1 = Integer.parseInt(reader.readLine());
+        if(num1==1)
+        System.out.println("понедельник");
+        if(num1==2)
+        System.out.println("вторник");
+        if(num1==3)
+        System.out.println("среда");
+        if(num1==4)
+        System.out.println("четверг");
+       if(num1==5)
+        System.out.println("пятница");
+       if(num1==6)
+        System.out.println("суббота");
+        if(num1==7)
+        System.out.println("воскресенье");
+       if(num1>7)
+        System.out.println("такого дня недели не существует");
+       if(num1<=0)
+
+            System.out.println("такого дня недели не существует");
+
+    }
+}
+
+
+
+public class Solution {                                                                //Количество дней в году
+    public static void main(String[] args) throws Exception {
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            String str = br.readLine();
+            int x = Integer.parseInt(str);
+            yearCheck(x);
+        }
+
+        private static void yearCheck(int a) {
+            if (a % 100 == 0 && a % 400 == 0) {
+                System.out.println("количество дней в году: 366");
+            } else if (a % 4 == 0 && a % 100 > 0) {
+                System.out.println("количество дней в году: 366");
+            } else if (a % 100 == 0) {
+                System.out.println("количество дней в году: 365");
+            } else {
+
+                System.out.println("количество дней в году: 365");
+            }
+        }
+    }
+    
+    
+    
+    public class Solution {                                                   Правило треугольника
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer a = Integer.parseInt(reader.readLine());
+        Integer b = Integer.parseInt(reader.readLine());
+        Integer c = Integer.parseInt(reader.readLine());
+        if ((a + b )> c&&(a + c) > b&&(b + c )> a){
+            System.out.println("Треугольник существует.");}
+        else
+        {
+            System.out.println("Треугольник не существует.");}
+
+
+    }
+}
+
+
+
+public class Solution {                                    //Ввести с клавиатуры вещественное число t, означающее
+                                                               время в минутах, прошедшее с начала очередного часа.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        double color = Double.parseDouble(reader.readLine());
+
+        if(color%5 < 3){
+            System.out.println("зеленый");
+        }else{
+            if(color%5 <4){
+                System.out.println("желтый");
+            }else{
+                System.out.println("красный");
+            }
+        }
+    }
+}
+
+
+
+public class Solution {                                             //Ввести с клавиатуры три целых числа. Определить,
+                                                       имеется ли среди них хотя бы одна пара равных между собой чисел.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer a = Integer.parseInt(reader.readLine());
+        Integer b = Integer.parseInt(reader.readLine());
+        Integer c = Integer.parseInt(reader.readLine());
+        if(a==b&&a==c)
+            System.out.println(a+" "+b+" "+c);
+        if(a==b&&a!=c)
+            System.out.println(a+" "+b);
+        if(a!=b&&a==c)
+            System.out.println(a+" "+c);
+        if(b==c&&b!=a)
+            System.out.println(b+" "+c);
+
+    }
+}
+
+
+
+public class Solution {   
+public static void main(String[] args) throws Exception {                   //Ввести с клавиатуры два целых числа, и
+                                                                                  вывести на экран минимальное из них.
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            Integer a = Integer.parseInt(reader.readLine());
+            Integer b = Integer.parseInt(reader.readLine());
+            if (a < b)
+                System.out.println(a);
+            if (b < a)
+                System.out.println(b);
+            if (a == b)
+                System.out.println(a);
+        }
+    }
+   
+   
+   public class Solution {                                                 //Ввести с клавиатуры четыре числа,
+                                                                               и вывести максимальное из них.
+Если числа равны между собой, необходимо вывести любое.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer a = Integer.parseInt(reader.readLine());
+        Integer b = Integer.parseInt(reader.readLine());
+        Integer c = Integer.parseInt(reader.readLine());
+        Integer d = Integer.parseInt(reader.readLine());
+
+        if (a >= b && a >=c && a >=d)
+            System.out.println(a);
+        if (b > a && b >=c && b >=d)
+            System.out.println(b);
+        if (c >a && c >b && c >=d)
+            System.out.println(c);
+        if (d >a && d >b && d >c)
+            System.out.println(d);
+
+
+    }
+}
+
+
+public class Solution {                                                 //Ввести с клавиатуры три числа, и вывести их в
+                                                                                          порядке убывания.
+                                                                            //Выведенные числа должны быть разделены пробелом.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+        Integer a=Integer.parseInt(reader.readLine());
+        Integer b=Integer.parseInt(reader.readLine());
+        Integer c=Integer.parseInt(reader.readLine());
+        if (a>b&&b>=c)
+            System.out.println(a+" "+b+" "+c);
+        if(b>=a&&a>=c)
+            System.out.println(b+" "+a+" "+c);
+        if(c>=b&&b>=a)
+            System.out.println(c+" "+b+" "+a);
+        if (b>c&&c>a)
+            System.out.println(b+" "+c+" "+a);
+        if (a>c&&c>b)
+            System.out.println(a+" "+c+" "+b);
+        if (c>=a&&a>b)
+            System.out.println(c+" "+a+" "+b);
+    }
+}
+
+
+
+
+public class Solution {                                              //Ввести с клавиатуры два имени и сравнить длина
+                                                                                       строк
+    public static void main(String[] args) throws Exception {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        String n = br.readLine();
+        if(s.equals(n))
+            System.out.println("Имена идентичны");
+        else if (s.length()==n.length())
+            System.out.println("Длины имен равны");
+    }
+}
+
+
+
+public class Solution {                                            //вести с клавиатуры имя и возраст. Если возраст
+                                                                       меньше 18 вывести надпись "Подрасти еще".
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String name=reader.readLine();
+        Integer age=Integer.parseInt(reader.readLine());
+        if(age>20)
+            System.out.println("И 18-ти достаточно");
+         }
+}
+
+
+public class Solution {                                                 //Ввести с клавиатуры три целых числа. Одно из
+                                                    чисел отлично от двух других, равных между собой. Вывести на экран
+                                                                       порядковый номер числа, отличного от остальных.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer a =Integer.parseInt(reader.readLine());
+        Integer b =Integer.parseInt(reader.readLine());
+        Integer c =Integer.parseInt(reader.readLine());
+        if(a>b&&a>c&&b==c)
+            System.out.println("1");
+        if(b>a&&b>c&&a==c)
+            System.out.println("2");
+        if(c>a&&c>b&&a==b)
+            System.out.println("3");
+        if(a<b&&a<c&&b==c)
+            System.out.println("1");
+        if(b<a&&b<c&&a==c)
+            System.out.println("2");
+        if(c<a&&c<b&&a==b)
+            System.out.println("3");
+     
+    }
+}
+
+
+
+public class Solution {                                          // Ввести с клавиатуры два целых числа, которые будут
+                                                             координатами точки, не лежащей на координатных осях OX
+                                                                      и OY.
+    public static void main(String[] args) throws Exception {
+       BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+       Integer a=Integer.parseInt(reader.readLine());
+        Integer b=Integer.parseInt(reader.readLine());
+        if(a>0&&b>0)
+            System.out.println("1");
+        if( a<0&&b>0)
+            System.out.println("2");
+        if(a<0&&b<0)
+            System.out.println("3");
+        if(a>0&&b<0)
+            System.out.println("4");
+    }
+}
+
+
+
+
+public class Solution {                                          //Ввести с клавиатуры целое число. Вывести на экран
+                                                                        его строку-описание следующего вида и т.д.
+"отрицательное четное число" - если число отрицательное и четное,
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        double digit = Double.parseDouble(br.readLine());
+        String a;
+        String b;
+        double EOD = (digit % 2);
+        if (digit == 0)
+            System.out.println("ноль");
+
+        boolean lessThenZero = (digit < 0);
+        if (lessThenZero) a = "отрицательное ";
+        else a = ("положительное ");
+        boolean EvenOrOdd = (EOD == 0);
+        if (EvenOrOdd) b = ("четное число ");
+        else b = ("нечетное число ");
+        if (digit != 0) System.out.println(a + b);
+    }
+}
+
+
+
+public class Solution {                                         //Ввести с клавиатуры целое число в диапазоне 1 - 999.
+                                                                          Вывести его строку-описание следующего вида:
+    public static void main(String[] args) throws Exception {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        String s = r.readLine();
+        int i = Integer.parseInt(s);
+
+        if (i > 0 && i < 1000) {
+            if (i % 2 != 0 && s.length() == 1) System.out.println("нечетное однозначное число");
+            if (i % 2 != 0 && s.length() == 2) System.out.println("нечетное двузначное число");
+            if (i % 2 != 0 && s.length() == 3) System.out.println("нечетное трехзначное число");
+            if (i % 2 == 0 && s.length() == 1) System.out.println("четное однозначное число");
+            if (i % 2 == 0 && s.length() == 2) System.out.println("четное двузначное число");
+            if (i % 2 == 0 && s.length() == 3) System.out.println("четное трехзначное число");//напишите тут ваш код
+
+        }
+    }
+}
+
+
+public class Solution {                                                //Ввести с клавиатуры три целых числа. Вывести
+                                                             на экран количество положительных чисел среди этих трех.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer a = Integer.parseInt(reader.readLine());
+        Integer b = Integer.parseInt(reader.readLine());
+        Integer c = Integer.parseInt(reader.readLine());
+        System.out.println(((a>0) && (b>0) && (c>0))? 3:((a>0) && (b>0))? 2: ((a>0) && (c>0))? 2:((c>0) &&
+                (b>0))? 2: ((a>0) || (b>0) || (c>0))? 1:0);
+
+    }
+   }
+   
+   
+   
+   public class Solution {                                          //вести с клавиатуры три целых числа. Вывести на
+                                                        экран количество положительных и количество отрицательных чисел
+                                                                             в исходном наборе, в следующем виде:
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        Integer a = Integer.parseInt(reader.readLine());
+        Integer b = Integer.parseInt(reader.readLine());
+        Integer c = Integer.parseInt(reader.readLine());
+
+        System.out.println("количество отрицательных чисел: "+(((a<0) && (b<0) && (c<0))? 3:((a<0) && (b<0))? 2: ((a<0) &&
+                (c<0))? 2:((c<0) && (b<0))? 2:((a<0) || (b<0) || (c<0))? 1:0));
+        System.out.println("количество положительных чисел: "+(((a>0) && (b>0) && (c>0))? 3:((a>0) && (b>0))? 2: ((a>0) && (c>0))? 2:((c>0) &&
+                (b>0))? 2: ((a>0) || (b>0) || (c>0))? 1:0));
+    }
+}
+   
+   
+   public class Solution {                                                 //  от 1 до 10 while
+        public static void main(String[] args) throws Exception {
+            int i = 1;
+            while (i<=10) {
+                System.out.println(i);
+                i++;
+
+            }
+        }
+    }
+    
+    
+    
+    public class Solution {                                        //от 10 до 1 while
+    public static void main(String[] args) throws Exception {
+        int i = 10;
+        while (i>0) {
+            System.out.println(i);
+            i--;
+
+        }
+    }
+}
+
+
+public class Solution {                                           //Ввести с клавиатуры строку и число N.
+                                                                           Вывести на экран строку N раз используя
+                                                                     цикл while. Каждое значение с новой строки.
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s =br.readLine();
+        Integer i = Integer.parseInt(br.readLine());
+
+   while (i>0) {
+
+            System.out.println(s);
+
+            i--;
+        }
+    }
+}
+
+
+public class Solution {                                        //Вывести на экран квадрат из 10х10 букв S используя цикл
+                                                                         while.
+
+        public static void main(String[] args) throws Exception {
+            String s = "S";
+            int i=10;
+            while (i>=1){
+            System.out.println(s+s+s+s+s+s+s+s+s+s);
+            i--;
+            }
+        }
+    
+    
+    
+    public class Solution {                                       //ывести на экран таблицу умножения 10х10 используя
+                                                                        цикл while.
+    public static void main(String[] args) throws Exception {
+        int i=1,n=1;
+        while(i<=10)
+        {
+            System.out.print(i+" ");
+            while(n<=9)
+            {
+                n++;
+                System.out.print(i*n+" ");
+            }
+            i++;
+            n=1;
+            System.out.println("");
+        }
+    }
+}
+
+public class Solution {                                              //Используя цикл for вывести на экран чётные ч
+                                                                               исла от 1 до 100
+    public static void main(String[] args) throws Exception {
+
+        for (int i = 2; i <= 100; i++) {
+            System.out.println(i++);
+        }
+    }
+}
+
+
+
+public class Solution {                                          //Используя цикл for вывести на экран прямоугольный
+                                                                          треугольник из восьмёрок
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
+        for (int i = 1; i <= 10; i++) {
+            for (int a = 0; a < i; a++) {
+                System.out.print("8");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+public class Solution {                                          //Рисуем прямоугольник из 8
+    public static void main(String[] args) throws Exception {
+        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+        int m = Integer.parseInt(buffer.readLine());
+        int n = Integer.parseInt(buffer.readLine());
+        int d = n;
+
+        for (; m > 0; m--) {
+            for (; n > 0; n--) {
+                System.out.print("8");
+            }
+            System.out.println("");
+            n = d;
+        }
+    }
+}
+    
+    
+    public class Solution {                                               //Используя цикл for вывести на экран:
+                                                                            - горизонтальную линию из 10 восьмёрок
+                                                                            - вертикальную линию из 10 восьмёрок.
+            public static void main(String[] args) throws Exception {
+                for (int j = 0; j < 10; j++)
+                    System.out.println(8);
+                for (int i = 0; i < 10; i++)
+                    System.out.print(8);
+            }
+        }
+      
+      
+      public class Solution {                                    //вывести фразу
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        for (int a = 1; a <= 10; a++)
+            System.out.println(s+" любит меня.");
+
+    }
+}
+
+
+public class Solution {                                                 //Ввести с клавиатуры три числа, вывести на
+                                                                                      экран среднее из них.
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer a = Integer.parseInt(reader.readLine());
+        Integer b = Integer.parseInt(reader.readLine());
+        Integer c = Integer.parseInt(reader.readLine());
+
+        if (a >= b && a < c || a < b && a >= c)
+            System.out.println(a);
+        else if  (b > a && b <= c || b < a && b > c)
+            System.out.println(b);
+
+        else
+            System.out.println(c);
+    }
+}
+
+
+
+public class Solution {                                         //Вводить с клавиатуры числа.
+                                                                       Если пользователь ввел -1, вывести на экран сумму
+                                                                        всех введенных чисел и завершить программу.
+                                                                            -1 должно учитываться в сумме.
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    }
+}
+
+
+public class Solution {
+ int summ = 0;
+        while (true) {
+            Integer a = Integer.parseInt(br.readLine());
+
+            summ += a;
+
+            if (a==-1)
+                break;}
+
+        System.out.println(summ);
+
+
+     public class Solution {                                       // ввести с клавиатуры по образцу имя и дату рождения
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String name = reader.readLine();
+        Integer y = Integer.parseInt(reader.readLine());
+        Integer m = Integer.parseInt(reader.readLine());
+        Integer d = Integer.parseInt(reader.readLine());
+        System.out.println("Меня зовут " + name+".");
+        System.out.print("Я родился " + d + ".");
+        System.out.print(m + ".");
+        System.out.println(y);
+    }
+}
+
+public class Cat {                                    //Реализовать метод boolean fight(Cat anotherCat)
+    public int age;
+    public int weight;
+    public int strength;
+
+    public Cat() {
+    }
+
+    public boolean fight(Cat anotherCat) {
+        Cat cat1=new Cat();
+        cat1.age= 1;
+        cat1.weight=2;
+        cat1.strength=3;
+        Cat cat2=new Cat();
+        cat2.age=2;
+        cat2.weight=2;
+        cat2.strength=4;
+        if ((weight * strength / age) > (anotherCat.weight * anotherCat.strength / anotherCat.age)) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+}
+public class Cat {                            //Создать класс Cat (кот) с пятью инициализаторами:
+    String name;
+    int age;
+    int weight;
+    String address;
+    String color;
+    public void initialize(String name) {
+        this.name = name;
+        this.age = 1;
+        this.weight = 2;
+        this.color = "Yellow";
+    }
+    public void initialize(String name,int weight,int age) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.color = "Yellow";
+        //напишите тут ваш код
+    }
+    public void initialize(String name,int age){
+        this.name = name;
+        this.age = age;
+        this.weight = 2;
+        this.color = "Yellow";
+    }
+    public void initialize(int weight,String color){
+        this.age = 1;
+        this.weight =weight;
+        this.color =color;
+    }
+    public void initialize(int weight,String color, String address){
+        this.age = 1;
+        this.weight = weight;
+        this.color = color;
+        this.address=address;
+    }
+    public static void main(String[] args) {
+
+    }
+}
+    public class Cat {                            //Создать класс Cat (кот) с пятью конструкторами:
+                                                                    - Имя,
+                                                                    - Имя, вес, возраст
+                                                                    - Имя, возраст (вес стандартный)
+                                                - вес, цвет, (имя, адрес и возраст - неизвестные. Кот - бездомный)
+                                                               - вес, цвет, адрес (чужой домашний кот)
+        String name;
+        int age;
+        int weight;
+        String address;
+        String color; //напишите тут ваш код
+        public Cat (String name){
+            this.name = name;
+            this.age=1;
+            this.weight=2;
+            this.color="Grey";
+        }
+        public Cat (String name,int weight,int age){
+            this.name = name;
+            this.age=age;
+            this.weight=weight;
+            this.color="Grey";
+        }
+        public Cat (String name,int age) {
+            this.name = name;
+            this.age = age;
+            this.weight = 2;
+            this.color = "Grey";
+        }
+        public Cat (int weight,String color){
+            this.age = 1;
+            this.weight = weight;
+            this.color = color;
+        }
+        public Cat (int weight,String color,String address) {
+            this.age = 1;
+            this.weight = weight;
+            this.address = address;
+            this.color = color;
+        }
+        public static void main(String[] args) {
+
+        }
+    }
+   
+   
+   public class Cat {               //В классе Cat создать метод protected void finalize() throws Throwable.
+
+    protected void finalize() throws Throwable{
+    }
+    
+    public static void main(String[] args) {
+
+   }
+}
+    
+    
+    public class Cat {               //В каждом классе Cat и Dog написать метод finalize, который выводит на экран
+                                       // текст о том, что такой-то объект уничтожен.
+        public static void main(String[] args) {
+
+        }
+
+        protected void finalize() throws Throwable {
+            System.out.println("A Cat was destroyed");
+        }
+
+        class Dog {
+            protected void finalize() throws Throwable {
+                System.out.println("A Dog was destroyed");
+                //напишите тут ваш код
+            }
+
+        }
+    }
+    public class Cat {           //В конструкторе класса Cat [public Cat()] увеличивать счётчик котов (статическую
+                                       переменную этого же класса catCount) на 1. В методе finalize уменьшать на 1.
+        public static int catCount = 0;
+
+        public Cat() {
+            catCount ++;
+        }
+
+        public void finalize() {
+            catCount --;
+        }
+
+            public static void main (String[]args){
+
+            }
+        }                                 
+  
+  
+  public class Cat {                                  //Cоздать статическую переменную int catCount в классе Cat. Создай конструктор 
+ 
+                                                          //[public Cat()], в которомувеличивай данную переменную на 1.
+        static int catCount;
+        public Cat(){
+            catCount++;
+        }
+
+        public static void main(String[] args) {
+
+        }
+    }
+    
+    
+    public class Cat {            //Добавить к классу Cat два статических метода: int getCatCount() и setCatCount(int),
+    private static int catCount = 0;
+
+    public Cat() {
+        catCount++;
+    }
+
+    public static int getCatCount() {
+        return catCount++;
+
+    }
+
+    public static void setCatCount(int catCount) {
+        Cat.catCount = catCount; 
+
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+    
+    
+    public class Cat {                                                                    //Статические коты
+                                       1. В классе Cat добавь публичную статическую переменную cats (ArrayList<Cat>).
+                                       2. Пусть при каждом создании кота (нового объекта Cat) в переменную cats
+                                       добавляется этот новый кот. Создать 10 объектов Cat.
+                                       3. Метод printCats должен выводить всех котов на экран. Нужно использовать
+                                                                                       переменную cats.
+    public static ArrayList<Cat> cats = new ArrayList<>();
+
+        public Cat() {
+
+        }
+
+        public static void main(String[] args) {
+            cats.add(0,new Cat());
+            
+            cats.add(1,new Cat());
+          
+            cats.add(2,new Cat());
+           
+            cats.add(3,new Cat());
+           
+            cats.add(4,new Cat());
+           
+            cats.add(5,new Cat());
+          
+            cats.add(6,new Cat());
+          
+            cats.add(7,new Cat());
+           
+            cats.add(8,new Cat());
+            
+            cats.add(9,new Cat());
+           
+printCats();
+
+        }
+
+        public static void printCats() {
+            for (int i =0;i<cats.size();i++)
+            System.out.println(cats.get(i));
+        }
+    }
+
+
+
+
+
